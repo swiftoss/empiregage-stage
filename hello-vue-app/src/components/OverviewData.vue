@@ -14,9 +14,117 @@
     </div>
     <div class="container-data">
     <h2 class="title-tile">Taken (Vandaag)</h2>
+    <div class="list">
+  <div class="item">
+    <div class="icon-container">
+  <i class="fas fa-layer-group"></i>
+</div>
+  </div>
+  <div class="item">
+    <div class="text-container">
+    <div class="title-taak">Voorbeeldpagina's</div>
+    <div class="date">
+      17/04/23
+      <span class="deadline-marker"><i class="fas fa-exclamation-circle"></i></span>
+    </div>
+  </div>
+  </div>
+  <div class="item">
+<div class="circle-container">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+  </div>
+  <div class="item">
+    <div class="progress-container">
+  <span class="progress-label">Progressie</span>
+  <span class="progress-percent">95%</span>
+</div>
+<div class="progress-container2">
+  <div class="progress-bar"></div>
+</div>
+  </div>
+  <div class="item-icon">
+    <i class="fas fa-chevron-right"></i>
+  </div>
+</div>
+<div class="divider-list"></div>
+<div style="margin-top:10px;" class="list">
+  <div class="item">
+    <div class="icon-container">
+  <i class="fas fa-layer-group"></i>
+</div>
+  </div>
+  <div class="item">
+    <div class="text-container">
+    <div class="title-taak">Chris prompts maken</div>
+    <div class="date">
+      17/04/23
+      <span class="deadline-marker"><i class="fas fa-exclamation-circle"></i></span>
+    </div>
+  </div>
+  </div>
+  <div class="item">
+
+<div class="circle-container">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+  </div>
+  <div class="item">
+    <div class="progress-container">
+  <span class="progress-label">Progressie</span>
+  <span class="progress-percent">95%</span>
+</div>
+<div class="progress-container2">
+  <div class="progress-bar"></div>
+</div>
+  </div>
+  <div class="item-icon">
+    <i class="fas fa-chevron-right"></i>
+  </div>
+</div>
+<div class="divider-list"></div>
+<div style="margin-top:10px;" class="list">
+  <div class="item">
+    <div class="icon-container">
+  <i class="fas fa-layer-group"></i>
+</div>
+  </div>
+  <div class="item">
+    <div class="text-container">
+    <div class="title-taak">Voorbeeldpagina's</div>
+    <div style="color: #757575;" class="date">
+        19/04/23
+    </div>
+  </div>
+  </div>
+  <div class="item">
+<div class="circle-container">
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div>
+  </div>
+  <div class="item">
+    <div class="progress-container">
+  <span class="progress-label">Progressie</span>
+  <span class="progress-percent">95%</span>
+</div>
+<div class="progress-container2">
+  <div class="progress-bar"></div>
+</div>
+  </div>
+  <div class="item-icon">
+    <i class="fas fa-chevron-right"></i>
+  </div>
+</div>
     </div>
   </template>
   
+
   <script>
     export default {
   data() {
@@ -37,10 +145,114 @@
 };
   </script>
   
+  
   <style scoped>
  .title-container {
   margin-left: 360px;
   margin-top: 40px;
+}
+
+.title-taak {
+  font-weight: 500;
+}
+
+.item-icon{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-container {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #adadad;
+  margin-right: -5px; /* Verwijder de standaardmarge tussen de rondjes */
+}
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.progress-label {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.progress-percent {
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.progress-container2 {
+  background-color: lightgray;
+  width: 100%;
+  height: 6px;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.progress-bar {
+  background-color: #FF6C6C;
+  width: 95%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+
+.date {
+  font-size: 14px;
+  color: #FF6C6C;
+  display: flex;
+  align-items: center;
+  margin-top: 1%;
+}
+
+.deadline-marker {
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.icon-container {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F37357;
+  border-radius: 8px;
+  padding: 10px;
+  width: 22px;
+  height: 22px;
+}
+
+.icon-container i {
+  color: white;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 6% 30% 20% 30% 10%;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.list:hover {
+  background-color: rgb(245, 245, 245); /* Stel de achtergrondkleur in voor het hover-effect */
+  cursor: pointer;
+}
+
+.item {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
 }
 
 .container {
@@ -135,4 +347,12 @@ width: 40%;
   height: 1px;
   border-top: 1px solid #ccc;
 }
+
+.divider-list{
+    width: 100%;
+  height: 1px;
+  border-top: 1px solid #ccc;
+  margin-top: 15px;
+}
+
   </style>
