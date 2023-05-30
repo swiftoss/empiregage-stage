@@ -1,23 +1,25 @@
 <template>
   <div>
-    <HelloWorld />
     <SideNavbar />
+    <HeaderSearch />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
 import SideNavbar from './components/SideNavbar.vue';
+import HeaderSearch from './components/HeaderSearch.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    SideNavbar
+    SideNavbar,
+    HeaderSearch
   }
 };
 </script>
 
 <style>
-/* Voeg hier je stijlregels toe */
+ body{
+  margin: 0;
+ }
 </style>
