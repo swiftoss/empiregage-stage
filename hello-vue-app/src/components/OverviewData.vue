@@ -12,6 +12,9 @@
      </div>
     <div class="divider"></div>
     </div>
+    <div class="container-data">
+    <h2 class="title-tile">Taken (Vandaag)</h2>
+    </div>
   </template>
   
   <script>
@@ -36,7 +39,7 @@
   
   <style scoped>
  .title-container {
-  margin-left: 350px;
+  margin-left: 360px;
   margin-top: 40px;
 }
 
@@ -44,6 +47,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.container-data {
+width: 40%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-left: 360px;
+  position: relative;
+  border-radius: 8px;
+  margin-top: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+.title-tile {
+    background-color: white;
+  padding: 5px 10px;
+  position: absolute;
+  top: -29px;
+  left: 10px;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
 }
 
 .modal-overlay {
@@ -69,8 +93,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
-  height: 300px;
+  width: 1000px;
+  height: 600px;
   background-color: #fff;
   z-index: 101;
   border-radius: 5px;
