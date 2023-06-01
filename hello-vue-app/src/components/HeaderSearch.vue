@@ -27,6 +27,7 @@
   justify-content: space-between;
   padding: 10px;
   padding-top: 29px;
+  z-index: 999;
 }
 
 .tab-container {

@@ -1,20 +1,11 @@
 <template>
-    <div class="title-container">
-    <div class="container">
-    <h1 class="title">Overview</h1>
-    <button class="circle-button" @click="openModal">
-      <i class="fas fa-plus"></i>
-    </button>
-    <div class="modal-overlay" :class="{ 'modal-open': showModal }" @click="closeModal"></div>
+  <div class="modal-overlay" :class="{ 'modal-open': showModal }" @click="closeModal"></div>
     <div class="modal" v-show="showModal">
       <!-- Inhoud van de modal -->
     </div>
-     </div>
-    <div class="divider"></div>
-    </div>
     <div class="container-data">
     <h2 class="title-tile">Taken (Vandaag)</h2>
-    <div class="list">
+    <div class="list" @click="openModal">
   <div class="item">
     <div class="icon-container">
   <i class="fas fa-layer-group"></i>
@@ -50,7 +41,7 @@
   </div>
 </div>
 <div class="divider-list"></div>
-<div style="margin-top:10px;" class="list">
+<div style="margin-top:10px;" class="list" @click="openModal">
   <div class="item">
     <div class="icon-container">
   <i class="fas fa-layer-group"></i>
@@ -87,7 +78,7 @@
   </div>
 </div>
 <div class="divider-list"></div>
-<div style="margin-top:10px;" class="list">
+<div style="margin-top:10px;" class="list" @click="openModal"> 
   <div class="item">
     <div class="icon-container">
   <i class="fas fa-layer-group"></i>
@@ -149,7 +140,7 @@
   <style scoped>
  .title-container {
   margin-left: 360px;
-  margin-top: 40px;
+  margin-top: 15px;
 }
 
 .title-taak {
@@ -261,7 +252,7 @@
   justify-content: space-between;
 }
 .container-data {
-width: 40%;
+width: 80%;
   border: 1px solid #ccc;
   padding: 20px;
   margin-left: 360px;
